@@ -1,0 +1,27 @@
+Economy:
+    - Receive money by playing
+    - Reveive money by doing jobs/quests
+    - /Take;Give;Pay commands
+    - 
+Anti-grief:
+    - Area protection
+    - Allow/deny tnt,lava,water,trees
+    - Allow/deny passing the area
+    - Adding/deleting friends
+ 	- 
+Friend list(?):
+	- Add/delete friends
+	- See when they were last time online
+	- 
+Login system:
+	- Passwords
+	- Deny moving etc...
+	- password recovery
+Teleports:
+	- Tp, tpa, tpahere, tpdeny, tpaccept
+	- warps
+	- home
+	- spawn
+	-
+Other things:
+	- First time player(give stuff etc) *DONE*

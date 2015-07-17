@@ -1,0 +1,11 @@
+server-name: Neutron
+join-message: 
+prefix: [Neutron]
+suffix: 
+
+
+
+
+allow-tnt: false
+allow-lava: true
+allow-interact: false

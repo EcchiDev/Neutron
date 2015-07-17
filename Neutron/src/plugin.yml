@@ -1,0 +1,24 @@
+name: Neutron
+version: 1.0
+main: com.ecchidev.main.Neutron
+author: EcchiDev
+description: Contains alot of fun things
+commands:
+    region:
+        description: All commands for creating region.
+    fly:
+        description: Toggles flight on and off.
+    heal:
+        description: Heal yourself and other players.
+    starve:
+        description: Starve yourself and other players.
+    ban:
+        description: Ban players.
+    unban:
+        description: Unban players.
+    check:
+        description: Check player ban status.
+    mute:
+        description: Check player ban status.
+    unmute:
+        description: Check player ban status.
