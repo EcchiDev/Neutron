@@ -1,8 +1,5 @@
 package com.ecchidev.antigrief;
 
-import java.util.Arrays;
-
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -11,12 +8,12 @@ import org.bukkit.event.Listener;
 
 import com.ecchidev.antigrief.Messages.Msg;
 import com.ecchidev.main.Neutron;
+import com.ecchidev.msgUtils.MessageUtils;
 
 //Jonne Saloranta - www.youtube.com/MasterSteve26
 
-public class CommandRegion implements Listener, CommandExecutor {
+public class CommandRegion extends MessageUtils implements Listener, CommandExecutor {
 
-	public static ChatColor AQUA = ChatColor.AQUA;
 	public Neutron plugin;
 
 	public CommandRegion(Neutron plugin) {
@@ -27,8 +24,8 @@ public class CommandRegion implements Listener, CommandExecutor {
 			String commandLabel, String[] args) {
 
 
-		String prefix = ChatColor.AQUA + "---" + ChatColor.GREEN;
-		String suffix = ChatColor.AQUA + "---";
+		String prefix = AQUA + "---" + GREEN;
+		String suffix = AQUA + "---";
 		String sfix = AQUA + "[" + plugin.getName() + "] ";
 
 		if (cmd.getName().equalsIgnoreCase("region")) {
@@ -62,24 +59,6 @@ public class CommandRegion implements Listener, CommandExecutor {
 		}
 
 		return false;
-	}
-	
-	public String[] onTabComplete(CommandSender sender, Command cmd,
-			String commandLabel, String[] args) {
-		String[] arguments = {"help","create","delete","addmember","removemember","list"};
-		if(cmd.getName().equalsIgnoreCase("region")) {
-			if(args.length == 1) {
-				
-				if(!args.equals("")) {
-					for(String x : arguments) {
-						x.toLowerCase();
-					}
-				}
-				Arrays.sort(arguments);
-				return arguments;
-			}
-		}
-		return null;
 	}
 
 }
