@@ -41,7 +41,7 @@ public class ListenerPlayerJoin extends MessageUtils implements Listener {
 	public void isOnASponge(PlayerMoveEvent e) {
 		Player p = e.getPlayer();
 		if (p.getItemInHand().getType() == Material.COMPASS && p.getLocation().subtract(0, 1, 0).getBlock().getType() == Material.SPONGE) {
-			p.setVelocity(new Vector(0, 1.5, 0));
+			p.setVelocity(new Vector(0, 1, 0));
 		}
 	}
 
